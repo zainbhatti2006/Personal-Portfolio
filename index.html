@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zain Bhatti — Front-End Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">ZB<span class="dot">.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <!-- Animated background grid -->
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-eyebrow reveal">👋 Hello, I'm</p>
+        <h1 class="hero-name reveal">Zain<br /><span class="accent">Bhatti</span></h1>
+        <p class="hero-title reveal">Front-End Developer &amp; CS Student</p>
+        <p class="hero-intro reveal">
+          I'm a Computer Science student at the University of Gujrat with a
+          passion for building clean, responsive web interfaces. Currently
+          growing my skills toward becoming a Full-Stack Developer.
+        </p>
+        <div class="hero-btns reveal">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat"><span class="stat-num" data-target="2">0</span><span>+</span><p>Projects</p></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num" data-target="2">0</span><span></span><p>Months Intern</p></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num" data-target="3">0</span><span></span><p>Skills</p></div>
+        </div>
+      </div>
+
+      <!-- Avatar placeholder (replace SVG with your real photo) -->
+      <div class="hero-visual reveal">
+        <div class="avatar-ring">
+          <div class="avatar-img">
+            <img src="IMG_9573.jpg" alt="Zain Bhatti" />
+          </div>
+        </div>
+        <!-- Floating badge chips -->
+        <div class="badge badge-1"><i class="ph ph-code"></i> HTML &amp; CSS</div>
+        <div class="badge badge-2"><i class="ph ph-lightning"></i> JavaScript</div>
+        <div class="badge badge-3"><i class="ph ph-tree-structure"></i> Node.js</div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="scroll-down" aria-label="Scroll to About">
+      <i class="ph ph-arrow-down"></i>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">01 — Who I Am</span>
+        <h2>About <span class="accent">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm <strong>Zain Bhatti</strong>, a Front-End Developer and
+            Computer Science student at the <strong>University of Gujrat</strong>.
+            I enjoy turning ideas into real, interactive web experiences using
+            HTML, CSS, and JavaScript.
+          </p>
+          <p>
+            I'm currently on an exciting journey to become a
+            <strong>Full-Stack Developer</strong> — expanding my backend
+            knowledge with Node.js and always eager to learn new technologies
+            that solve real-world problems.
+          </p>
+          <p>
+            My goal is to build impactful digital products, contribute to
+            meaningful projects, and grow into a well-rounded software
+            engineer who bridges design and functionality.
+          </p>
+          <a href="#contact" class="btn btn-primary" style="margin-top:1.5rem">Let's Connect</a>
+        </div>
+        <div class="about-cards reveal">
+          <div class="info-card">
+            <i class="ph ph-map-pin"></i>
+            <div>
+              <strong>Location</strong>
+              <span>Gujrat, Pakistan</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="ph ph-code"></i>
+            <div>
+              <strong>Role</strong>
+              <span>Front-End Developer</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="ph ph-graduation-cap"></i>
+            <div>
+              <strong>Degree</strong>
+              <span>BS Computer Science</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="ph ph-hand-waving"></i>
+            <div>
+              <strong>Status</strong>
+              <span class="available">Open to Work ✓</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">02 — Background</span>
+        <h2>Education &amp; <span class="accent">Certifications</span></h2>
+      </div>
+      <div class="edu-grid">
+
+        <!-- Academic Timeline -->
+        <div class="edu-col reveal">
+          <h3 class="col-title"><i class="ph ph-student"></i> Academic</h3>
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-year">2024 – Present</span>
+                <h4>BS Computer Science</h4>
+                <p>University of Gujrat</p>
+                <p class="tl-note">Currently pursuing a Bachelor's degree in Computer Science, focusing on software development and web technologies.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-year">2022 – 2024</span>
+                <h4>Intermediate (FSc / ICS)</h4>
+                <p>Punjab College</p>
+                <p class="tl-note">Completed Intermediate level education with a focus on Science subjects.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-year">Completed 2022</span>
+                <h4>Matriculation (SSC)</h4>
+                <p>Allied School</p>
+                <p class="tl-note">Completed secondary school education from Allied School in 2022.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="edu-col reveal">
+          <h3 class="col-title"><i class="ph ph-certificate"></i> Certifications</h3>
+          <div class="cert-empty">
+            <div class="cert-empty-icon"><i class="ph ph-clock"></i></div>
+            <h4>Certifications In Progress</h4>
+            <p>
+              I'm actively building my skills and working toward earning
+              professional certifications in web development. Stay tuned —
+              more coming soon as I continue my learning journey!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">03 — Expertise</span>
+        <h2>Technical <span class="accent">Skills</span></h2>
+      </div>
+      <div class="skills-grid skills-single">
+
+        <div class="skill-group reveal">
+          <h3><i class="ph ph-layout"></i> Frontend &amp; Core Skills</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-label"><span>HTML5</span><span>90%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-label"><span>CSS3</span><span>85%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-label"><span>JavaScript</span><span>75%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-label"><span>Node.js</span><span>45%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="45"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">04 — Portfolio</span>
+        <h2>My <span class="accent">Projects</span></h2>
+      </div>
+
+      <div class="projects-grid projects-two-col">
+
+        <article class="project-card reveal" data-category="web">
+          <div class="project-header">
+            <div class="project-icon"><i class="ph ph-check-square"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/zainbhatti2006/Task-Manager" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+              <a href="https://zainbhatti2006.github.io/Task-Manager/" target="_blank" rel="noopener" aria-label="Live demo"><i class="ph ph-arrow-square-out"></i></a>
+            </div>
+          </div>
+          <h3>To-Do List App</h3>
+          <p>A clean and interactive task management app that lets users add, complete, and delete tasks. Features persistent state using localStorage so tasks survive page refreshes.</p>
+          <div class="project-meta">
+            <div><strong>Role:</strong> Solo Developer</div>
+            <div><strong>Outcome:</strong> Fully functional task tracker with a responsive UI</div>
+          </div>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="web">
+          <div class="project-header">
+            <div class="project-icon"><i class="ph ph-wallet"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/zainbhatti2006/Wallet-Tracker" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+              <a href="https://zainbhatti2006.github.io/Wallet-Tracker/" target="_blank" rel="noopener" aria-label="Live demo"><i class="ph ph-arrow-square-out"></i></a>
+            </div>
+          </div>
+          <h3>Wallet Tracker</h3>
+          <p>A personal finance tracker that lets users log income and expenses, view a running balance, and track their spending habits. Data is saved in the browser using localStorage.</p>
+          <div class="project-meta">
+            <div><strong>Role:</strong> Solo Developer</div>
+            <div><strong>Outcome:</strong> Real-time balance updates with income/expense breakdown</div>
+          </div>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">05 — Career</span>
+        <h2>Work <span class="accent">Experience</span></h2>
+      </div>
+      <div class="exp-timeline">
+
+        <div class="exp-item reveal">
+          <div class="exp-aside">
+            <span class="exp-year">2026 · 2 Months</span>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <h3>Front-End Developer Intern</h3>
+              <span class="exp-company">Arch Technologies</span>
+            </div>
+            <ul class="exp-list">
+              <li>Contributing to real-world web development projects under professional guidance</li>
+              <li>Building and styling responsive web pages using HTML, CSS, and JavaScript</li>
+              <li>Collaborating with the team to implement UI components and improve user experience</li>
+              <li>Learning industry best practices for clean code, version control, and project workflows</li>
+            </ul>
+            <div class="exp-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">06 — Get In Touch</span>
+        <h2>Let's <span class="accent">Work Together</span></h2>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <p>Whether you have a project in mind, an opportunity to share, or just want to say hi — my inbox is always open. I typically respond within 24 hours.</p>
+          <div class="contact-links">
+            <a href="mailto:zain@example.com" class="contact-link">
+              <i class="ph ph-envelope"></i>
+              <span>zain@example.com</span>
+            </a>
+            <a href="tel:+923098626262" class="contact-link">
+              <i class="ph ph-phone"></i>
+              <span>+92 309 862 6262</span>
+            </a>
+            <a href="https://linkedin.com/in/muhammad-zain-ul-abideen-126852257" class="contact-link" target="_blank" rel="noopener">
+              <i class="ph ph-linkedin-logo"></i>
+              <span>linkedIn</span>
+            </a>
+            <a href="https://github.com/zainbhatti2006" class="contact-link" target="_blank" rel="noopener">
+              <i class="ph ph-github-logo"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project inquiry, collaboration..." required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Send Message <i class="ph ph-paper-plane-tilt"></i>
+          </button>
+          <div class="form-success" id="formSuccess" hidden>
+            ✓ Message sent! I'll be in touch soon.
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a href="#hero" class="nav-logo">ZB<span class="dot">.</span></a>
+        <p>Building the web, one line at a time.<br />University of Gujrat · Pakistan.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://github.com/zainbhatti" aria-label="GitHub" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i></a>
+        <a href="https://linkedin.com/in/zainbhatti" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="ph ph-linkedin-logo"></i></a>
+        <a href="https://twitter.com/zainbhatti" aria-label="Twitter" target="_blank" rel="noopener"><i class="ph ph-x-logo"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Zain Bhatti. Designed &amp; built with ♥ in Gujrat, Pakistan.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <!-- <button class="back-top" id="backTop" aria-label="Back to top"><i class="ph ph-arrow-up"></i></button> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
